@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10253d">
+  <meta name="description" content="ChemMaster - ứng dụng học Hóa học THPT, ưu tiên Hóa 12.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>ChemMaster — Học Hóa thông minh</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="ChemMaster trang chủ">
+        <span class="brand-mark">⚗</span><span><b>ChemMaster</b><small>HỌC HÓA THÔNG MINH</small></span>
+      </a>
+      <nav class="nav">
+        <button class="nav-item active" data-view="home">⌂ <span>Tổng quan</span></button>
+        <button class="nav-item" data-view="theory">▤ <span>Kiến thức Hóa</span></button>
+        <button class="nav-item" data-view="notes">🗒 <span>Ghi chú & tài liệu</span></button>
+        <button class="nav-item" data-view="practice">✎ <span>Luyện tập</span></button>
+        <button class="nav-item" data-view="exam">▣ <span>Trộn đề / thi THPT</span></button>
+        <button class="nav-item" data-view="reminders">◷ <span>Thông báo & ôn tập</span></button>
+        <button class="nav-item" data-view="mistakes">↻ <span>Sổ lỗi sai</span><span class="nav-count" id="mistakeCount">0</span></button>
+        <button class="nav-item" data-view="progress">▥ <span>Tiến độ học</span></button>
+        <button class="nav-item" data-view="sync">☁ <span>Đồng bộ đám mây</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="offline-pill"><span class="status-dot"></span><span id="networkStatus">Đang kiểm tra kết nối…</span></div>
+        <p>Phiên bản khởi đầu · Hóa 12</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Mở menu">☰</button>
+        <div><div class="eyebrow">KHÔNG GIAN HỌC TẬP CỦA BẠN</div><h1 id="pageTitle">Tổng quan</h1></div>
+        <button class="icon-btn" id="installBtn" hidden>＋ Cài ứng dụng</button>
+      </header>
+      <div id="appContent" class="content" aria-live="polite"></div>
+      <footer>Học chắc từng phần · Ôn tập thông minh · Tiến bộ mỗi ngày</footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "ChemMaster — Học Hóa THPT",
+  "short_name": "ChemMaster",
+  "description": "Ứng dụng học Hóa THPT, ưu tiên Hóa 12.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7fa",
+  "theme_color": "#10253d",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
